@@ -32,3 +32,33 @@ ul, li {
 .media-image {
     max-height: 150px;
 }
+
+/* Header layout for two rows */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-top,
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.header-top .info-item,
+.header-bottom .info-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.material-icons {
+    color: #007bff; /* matching header color */
+    vertical-align: middle;
+    margin-right: 5px;
+}
