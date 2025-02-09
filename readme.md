@@ -1,4 +1,13 @@
-Create a simple webpage in your XAMPP software stack.  
-Posted a screenshot of the webpage for this assignment.
+# Online Resume - APCV403 Assignment 3
 
-HTML
+This project is a simple online resume website built for APCV403 Assignment 3 by Scott Manley. It includes:
+- An HTML file to display resume information.
+- A CSS file for styling with custom themes and Material Web Icons.
+- Media assets to enhance presentation.
+
+## Features
+- Responsive design centered on the page.
+- Themed color palette based on [scottmanley.app](https://www.scottmanley.app).
+- Integrated iconography using Material Web Icons.
+
+## Project Structure
