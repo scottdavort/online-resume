@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 20px;
+}
+h2 {
+    color: #007bff; /* Blue color for headings */
+}
+.container {
+    border: 1px solid #dee2e6; /* Light gray border */
+    padding: 20px;
+    border-radius: 5px;
+}
+.highlight {
+    background-color: #ffc107; /* Yellow highlight */
+    padding: 5px 10px;
+    border-radius: 3px;
+}
