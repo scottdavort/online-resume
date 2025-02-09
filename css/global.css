@@ -28,3 +28,7 @@ ul, li {
     padding: 5px 10px;
     border-radius: 3px;
 }
+
+.media-image {
+    max-height: 150px;
+}
