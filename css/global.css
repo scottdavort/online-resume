@@ -1,14 +1,27 @@
 body {
     font-family: 'Roboto Flex', sans-serif;
     margin: 20px;
+    /* Optional: remove default text-align if needed */
+}
+h1 {
+    color: #222222; /* Dark gray primary from scottmanley.app */
 }
 h2 {
     color: #007bff; /* Blue color for headings */
 }
+p {
+    color: #333333; /* Complementary text color */
+}
+ul, li {
+    color: #333333; /* Consistent text color for lists */
+}
 .container {
     border: 1px solid #dee2e6; /* Light gray border */
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
+    text-align: left;
 }
 .highlight {
     background-color: #ffc107; /* Yellow highlight */
