@@ -62,3 +62,28 @@ ul, li {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+/* Added rule for hr to replace inline styles from HTML */
+hr {
+    border-top: 1px dotted #ccc;
+    margin: 20px 0;
+}
+
+/* Added floating image container and caption styles */
+figure.float-image {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 45%;
+}
+
+figure.float-image img {
+    width: 100%;
+    height: auto;
+}
+
+figure.float-image figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+}
