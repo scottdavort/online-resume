@@ -1,0 +1,130 @@
+/* Dr. Manhattan Clock Theme */
+/* Inspired by the Watchmen series, this CSS creates a digital clock with a Dr. Manhattan theme. */
+/* The clock will have a dark, cosmic background with glowing blue elements to represent Dr. Manhattan's powers. */
+@import url('https://fonts.googleapis.com/css2?family=Courier+New:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background-image: url('../images/clock/doomsday-clock.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div.dig, div.hour, div.min, div.sec {
+    position: absolute;
+}
+
+div.hour, div.min, div.sec {
+    width: 4px;
+    height: 4px;
+    font-size: 2px;
+    box-shadow: 0 0 12px rgba(0, 162, 255, 0.9);
+    border-radius: 50%;
+}
+
+div.dig {
+    width: 40px;
+    height: 40px;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00d8ff;
+    text-align: center;
+    padding-top: 10px;
+    text-shadow: 0 0 12px #00a2ff;
+    border-radius: 50%;
+    background-color: rgba(0, 30, 60, 0.3);
+}
+
+div.min {
+    background: #00a2ff; /* Dr. Manhattan blue */
+}
+
+div.hour {
+    background: #005b8e; /* Darker blue */
+}
+
+div.sec {
+    background: #00d8ff; /* Bright blue glow */
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 50px rgba(0, 162, 255, 0.6);
+    max-width: 90%;
+    width: 500px;
+}
+
+.clock-container::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(0,162,255,0.4) 0%, rgba(0,0,0,0) 70%);
+    z-index: -1;
+}
+
+.clock-face {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 3px solid rgba(0, 162, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0, 162, 255, 0.6);
+    margin: 0 auto;
+}
+
+.manhattan-quote {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    color: #00a2ff;
+    text-shadow: 0 0 10px #00a2ff;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.doomsday-title {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    color: #00d8ff;
+    text-shadow: 0 0 15px #00a2ff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-family: 'Courier New', monospace;
+    color: #00a2ff;
+    text-shadow: 0 0 15px #00a2ff;
+}
